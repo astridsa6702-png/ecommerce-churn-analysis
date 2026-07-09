@@ -15,6 +15,7 @@ Analyzing delivery performance and customer satisfaction using SQL and Excel.
    Query yang digunakan dapat dilihat dalam file bernama "query_analisis.sql"
 
 **Visualization & Insights**
+<img width="518" height="372" alt="late_delivery_chart" src="https://github.com/user-attachments/assets/a763b004-73e5-43c4-8f95-742406729546" />
 Key insights:
   - Keterlambatan logistik merupakan pemicu utama review yang rendah. Dari seluruh paket yang           pengirimannya telat, 53% di antaranya berujung pada review "Kecewa" (rating 1-2) dari pelanggan.
   - sebagai perbandingan, kelompok dengan review "Puas" (rating 4-5), tingkat keterlambatan hanya       sebesar 3.5%
