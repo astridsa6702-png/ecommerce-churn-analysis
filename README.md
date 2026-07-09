@@ -11,6 +11,13 @@ Proyek ini dirancang secara modular dengan pendekatan multi-fase, dengan membeda
 *   Fase 3: Product Category Matrix (Revenue vs Quality): Mengaudit kategori produk yang menghasilkan omset tinggi namun memiliki masalah kualitas.
 *   *(Fase berikutnya akan terus diperbarui seiring berjalannya eksplorasi data)*
 
+### 💾 Data Source
+Dataset yang digunakan dalam analisis ini adalah **Brazilian E-Commerce Public Dataset by Olist** yang diambil langsung dari Kaggle. 
+
+**Link Dataset:** [Kaggle - Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce/data)
+
+*Catatan: Dataset ini berisi 100 ribu data pesanan dari tahun 2016 hingga 2018 di Brazil, yang mencakup informasi status pesanan, harga, performa pembayaran, lokasi pelanggan, hingga ulasan produk asli.*
+
 ## 2. Tech Stack
 * Database Engine: SQLite (DB Browser for SQLite)
 * Data Visualization: Microsoft Excel
