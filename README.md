@@ -66,10 +66,10 @@ Pada tahap awal, ditemukan anomali berupa penggandaan data pada tabel `customers
 
 <img width="671" height="482" alt="payment_behaviour" src="https://github.com/user-attachments/assets/424f7d40-c67e-45ce-b79d-f2a559f791a4" />
 
-   - Dominasi Mutlak Kartu Kredit: Metode `credit_card` merupakan motor penggerak ekonomi utama platform, menyumbang 76.061 transaksi dengan total omset raksasa mencapai 12.444.708,88. Angka ini jauh meninggalkan `boleto` di posisi kedua.
-   - Nilai Keranjang Belanja (Ticket Size) Tertinggi. Pengguna kartu kredit tidak hanya menang dari segi kuantitas, tetapi juga mencatatkan rata-rata nilai belanja tertinggi per transaksi, yaitu **162,99**.
+   - Dominasi Mutlak Kartu Kredit: Metode `credit_card` mendominasi kue perputaran uang platform secara mutlak dengan menguasai 79% total omset (mencapai 12.444.708,88 dari total 76.061 transaksi). Angka ini jauh meninggalkan `boleto` yang berada di posisi kedua (18%).
+   - Nilai Keranjang Belanja (Ticket Size) Tertinggi. Pengguna kartu kredit tidak hanya menang dari segi kuantitas, tetapi juga mencatatkan rata-rata nilai belanja tertinggi per transaksi, yaitu 162,99.
    - Rata-rata Tenor Cicilan Sehat. Secara keseluruhan, rata-rata durasi cicilan pengguna kartu kredit berada di angka 3,5 bulan, mengindikasikan perputaran piutang yang relatif sehat bagi mitra finansial platform.
-   - Metode Non-Cicilan Cenderung Konservatif. Metode pembayaran instan lunas seperti `boleto` (144,85) dan `debit_card` (141,44) memiliki rata-rata belanja yang lebih rendah, sementara pengguna `voucher` hanya menghabiskan rata-rata **62,50** per transaksi.
+   - Metode Non-Cicilan Cenderung Konservatif. Metode pembayaran instan lunas seperti `boleto` (144,85) dan `debit_card` (141,44) memiliki rata-rata belanja yang lebih rendah, sementara pengguna `voucher` hanya menghabiskan rata-rata 62,50 per transaksi.
 
 
 <img width="700" height="467" alt="bulan_cicilan" src="https://github.com/user-attachments/assets/9654884a-14e7-48f7-af01-9a3d4c350c64" />
