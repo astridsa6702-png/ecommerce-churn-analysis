@@ -14,8 +14,8 @@ Pada tahap awal, ditemukan anomali berupa penggandaan data pada tabel `customers
 
 ## 4. Key SQL Query
    Query yang digunakan dapat dilihat dalam file bernama:
-   - "query_analisis.sql"
-   - "rute_logistik_bermasalah.sql"
+   - `query_analisis.sql`
+   - `rute_logistik_bermasalah.sql`
 
 # Visualization & Insights
 
