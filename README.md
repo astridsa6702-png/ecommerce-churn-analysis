@@ -1,7 +1,15 @@
 # E-Commerce Business Performance: Customer Satisfaction & Logistics Analysis
 
 ## 1. Project Overview
-Proyek ini merupakan analisis bisnis komprehensif  yang bertujuan untuk mengidentifikasi penyebab utama penurunan kepuasan pelanggan (bad reviews) dan memetakan titik penyumbatan pada jalur logistik pengiriman barang perusahaan.
+Proyek ini adalah platform analisis bisnis komprehensif yang didedikasikan untuk mengupas performa operasional, logistik, dan komersial dari dataset e-commerce Olist (Brazil). 
+
+Proyek ini dirancang secara modular dengan pendekatan multi-fase, dengan membedah data mentah dari berbagai sudut pandang strategis guna menghasilkan rekomendasi yang konkret untuk tingkat eksekutif.
+
+### Modul Analisis yang Tersedia (Fase Aktif):
+*   Fase 1: Customer Satisfaction Analysis: Menemukan akar penyebab utama bad reviews pelanggan.
+*   Fase 2: Geographic & Logistics Performance: Memetakan bottleneck rute pengiriman antarnegara bagian.
+*   Fase 3: Product Category Matrix (Revenue vs Quality): Mengaudit kategori produk yang menghasilkan omset tinggi namun memiliki masalah kualitas.
+*   *(Fase berikutnya akan terus diperbarui seiring berjalannya eksplorasi data)*
 
 ## 2. Tech Stack
 * Database Engine: SQLite (DB Browser for SQLite)
@@ -16,6 +24,7 @@ Pada tahap awal, ditemukan anomali berupa penggandaan data pada tabel `customers
    Query yang digunakan dapat dilihat dalam file bernama:
    - `query_analisis.sql`
    - `rute_logistik_bermasalah.sql`
+   - `analisa_produk.sql`
 
 # Visualization & Insights
 
@@ -36,9 +45,17 @@ Pada tahap awal, ditemukan anomali berupa penggandaan data pada tabel `customers
    - Bottleneck Utama Rute SP ke RJ. Pengiriman lintas wilayah dari SP ke Rio de Janeiro (RJ)            menyumbang tumpukan masalah terbesar kedua dengan 1396 paket telat dan persentase                   keterlambatan sebesar 14.41%.
    - Efek Jarak Geografis. Rute dengan jarak tempuh lebih jauh seperti menuju Bahia (BA) dan Ceara       (CE) mengalami lonjakan persentasi keterlambatan yang tinggi (masing-masing 14.33% dan 14.81%).
 
+**Key Insights Fase 3:**
+
+<img width="766" height="517" alt="Analisa_produk" src="https://github.com/user-attachments/assets/711604f0-ef07-4ee0-8edf-1cd8a011376a" />
+
+
+   - Kategori Andalan (beleza_saude). Kategori kecantikan & kesehatan menjadi penyumbang pendapatan tertinggi platform sebesar 1.263.138, sekaligus menjaga tingkat kepuasan pelanggan yang sangat baik dengan rata-rata rating 4,14. Kategori ini adalah produk andalan utama platform yang wajib dipertahankan kualitasnya.
+   - Produk yang perlu diperhatikan. Kategori perlengkapan rumah (cama_mesa_banho) mencatatkan jumlah pesanan terbanyak (9.417 orders), namun memiliki performa kualitas terendah di tiga besar dengan rating rata-rata jatuh ke angka 3,9. Hal ini mengindikasikan adanya isu massal pada ekspektasi kualitas produk atau kesesuaian deskripsi dari seller. Hal yang sama juga terjadi pada kategori informatica_acessorios dan moveis_decoracao yang ratingnya di bawah 4.
 
 # Business Recommendations
 Berdasarkan temuan data, berikut adalah rekomendasi strategis untuk manajemen operasional:
 1. Pembangunan Gudang Regional. Perusahaan direkomendasikan untuk membangun gudang penyimpanan regional baru di wilayah RJ (Rio de Janeiro) untuk memotong rantai pasok transportasi antarprovinsi.
 2. Kompensasi Proaktif Otomatis. Mengirimkan voucher diskon belanja otomatis ke aplikasi pelanggan jika sistem mendeteksi paket telat melewati batas estimasi, guna meredam potensi rating bintang 1-2.
-3. Restrukturisasi SLA Mitra Kurir Lintas Wilayah: Melakukan evaluasi mendalam atau mengganti vendor kurir pihak ketiga khusus rute jarak jauh (SP-BA dan SP-CE) dengan menerapkan penalti finansial tegas jika late percentage melebihi batas 10%.
+3. Restrukturisasi SLA Mitra Kurir Lintas Wilayah. Melakukan evaluasi mendalam atau mengganti vendor kurir pihak ketiga khusus rute jarak jauh (SP-BA dan SP-CE) dengan menerapkan penalti finansial tegas jika late percentage melebihi batas 10%.
+4. Audit Seller untuk Kategori Kritis (Rating < 4.0). Disarankan untuk melakukan audit performa dan pengetatan kurasi kualitas produk khusus untuk seller di kategori `cama_mesa_banho`, `informatica_acessorios`, dan `moveis_decoracao`. Berikan sanksi berupa penurunan visibilitas toko bagi seller yang konsisten menyumbang rating di bawah bintang 3 guna menyelamatkan kepuasan pelanggan jangka panjang.
