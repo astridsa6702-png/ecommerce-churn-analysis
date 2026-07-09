@@ -4,8 +4,8 @@
 Proyek ini merupakan analisis bisnis komprehensif  yang bertujuan untuk mengidentifikasi penyebab utama penurunan kepuasan pelanggan (bad reviews) dan memetakan titik penyumbatan pada jalur logistik pengiriman barang perusahaan.
 
 ## 2. Tech Stack
-**Database Engine: SQLite (DB Browser for SQLite)
-**Data Visualization: Microsoft Excel
+* **Database Engine: SQLite (DB Browser for SQLite)
+* **Data Visualization: Microsoft Excel
 
 ## 3. Data Cleaning & Mitigasi Anomali
 Pada tahap awal, ditemukan anomali berupa penggandaan data pada tabel 'customers' yang membengkak hingga 1,2 juta baris. Untuk menjaga integritas data dan akurasi metrik bisnis, mitigasi dilakukan dengan:
