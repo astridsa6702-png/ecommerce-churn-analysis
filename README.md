@@ -29,7 +29,7 @@ Pada tahap awal, ditemukan anomali berupa penggandaan data pada tabel `customers
 
 **Key Insights Fase 2:**
 
-<img width="742" height="457" alt="rute_logistik" src="https://github.com/user-attachments/assets/351b11df-5fab-4fb4-83f1-ef76b515abc6" />
+<img width="742" height="457" alt="rute_logistik" src="https://github.com/user-attachments/assets/5a6b43c4-e80f-408f-ac47-4ec82a236169" />
 
 
    - Sentralisasi Gudang di Sao Paulo (SP). Seluruh top 9 rute dengan kasus keterlambatan tertinggi      di platfrm berasal dari penjual yang berlokasi di wilayah SP.
