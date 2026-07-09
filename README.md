@@ -1,18 +1,18 @@
 # E-Commerce Business Performance: Customer Satisfaction & Logistics Analysis
 
-1. Project Overview
+## 1. Project Overview
 Proyek ini merupakan analisis bisnis komprehensif  yang bertujuan untuk mengidentifikasi penyebab utama penurunan kepuasan pelanggan (bad reviews) dan memetakan titik penyumbatan pada jalur logistik pengiriman barang perusahaan.
 
-2. Tech Stack
-   Database Engine: SQLite (DB Browser for SQLite)
-   Data Visualization: Microsoft Excel 
+## 2. Tech Stack
+**Database Engine: SQLite (DB Browser for SQLite)**
+**Data Visualization: Microsoft Excel**
 
-3. Data Cleaning & Mitigasi Anomali
+## 3. Data Cleaning & Mitigasi Anomali
 Pada tahap awal, ditemukan anomali berupa penggandaan data pada tabel 'customers' yang membengkak hingga 1,2 juta baris. Untuk menjaga integritas data dan akurasi metrik bisnis, mitigasi dilakukan dengan:
 1. Menggunakan tabel 'orders' (~ 99 ribu baris valid) sebagai basis utama analisis transaksi.
 2. Menggunakan sub-query 'SELECT DISTINCT' saat melakukan JOIN ke tabel lokasi pelanggan guna memangkas data duplikat secara bersih.
 
-4. Key SQL Query
+## 4. Key SQL Query
    Query yang digunakan dapat dilihat dalam file bernama:
    - "query_analisis.sql"
    - "rute_logistik_bermasalah.sql"
