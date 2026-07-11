@@ -36,6 +36,8 @@ Pada tahap awal, ditemukan anomali berupa penggandaan data pada tabel `customers
    - `analisa_produk.sql`
    - `payment_behavior.sql`
    - `bulan_cicilan.sql`
+   - `repeat_order.sql`
+   - `churn_logistik.sql`
 
 # Visualization & Insights
 
@@ -102,3 +104,5 @@ Berdasarkan temuan data, berikut adalah rekomendasi strategis untuk manajemen op
 4. Audit Seller untuk Kategori Kritis (Rating < 4.0). Disarankan untuk melakukan audit performa dan pengetatan kurasi kualitas produk khusus untuk seller di kategori `cama_mesa_banho`, `informatica_acessorios`, dan `moveis_decoracao`. Berikan sanksi berupa penurunan visibilitas toko bagi seller yang konsisten menyumbang rating di bawah bintang 3 guna menyelamatkan kepuasan pelanggan jangka panjang.
 5. Optimalisasi Kemitraan Perbankan (Campaign 8 & 10 Bulan) Mengingat tenor 8 dan 10 bulan adalah favorit konsumen, perusahaan harus memanfaatkan daya tawar ini untuk bernegosiasi dengan bank penerbit kartu kredit utama guna mendapatkan subsidi biaya transaksi (MDR fee) yang lebih murah pada skema cicilan tersebut.
 6. Strategi Insentif Pembayaran Instan (Boleto & Debit). Guna mempercepat perputaran uang tunai (cash flow) langsung dan mengurangi ketergantungan pada pencairan dana kartu kredit, platform direkomendasikan membuat program promo cashback kecil (misal 1-2%) khusus untuk transaksi menggunakan `debit_card` dan `boleto`.
+7. Penerapan Post-Purchase Quality Audit Survey. Mengingat tingginya angka _churn_ (97%) bukan disebabkan oleh keterlambatan logistik, sebaiknya meluncurkan survei otomatis spesifik via aplikasi/email 3 hari setelah status barang diterima oleh _first-time buyer_. Fokus survei diarahkan pada kesesuaian fisik produk terhadap deskripsi dan kualitas ekspektasi barang untuk memetakan akar masalah kepergian mereka.
+8. Program Akselerasi Transaksi Kedua (_"Welcome Back Coupon"_). Untuk memotong fenomena _One-Time Buyer Syndrome_, disarankan merancang skema insentif khusus berupa kupon diskon transaksi kedua dengan masa kedaluwarsa ketat (misal: diskon 20% hanya berlaku dalam 14 hari sejak transaksi pertama selesai) demi memicu habit belanja ulang sesegera mungkin.
