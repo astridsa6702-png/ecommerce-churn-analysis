@@ -10,6 +10,8 @@ Proyek ini dirancang secara modular dengan pendekatan multi-fase, dengan membeda
 *   Fase 2: Geographic & Logistics Performance. Memetakan bottleneck rute pengiriman antarnegara bagian.
 *   Fase 3: Product Category Matrix (Revenue vs Quality). Mengaudit kategori produk yang menghasilkan omset tinggi namun memiliki masalah kualitas.
 *   Fase 4: Payment Behavior Analysis. Memetakan tren pembayaran dan perilaku cicilan pelanggan
+*   Fase 5:
+*   (_fase berikutnya akan terus diperbarui seiring berjalannya eksplorasi data_)
 
 ### Data Source
 Dataset yang digunakan dalam analisis ini adalah **Brazilian E-Commerce Public Dataset by Olist** yang diambil langsung dari Kaggle. 
